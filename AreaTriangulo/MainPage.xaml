@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AreaTriangulo.MainPage"
+             Shell.NavBarIsVisible="False">
+      
+    <ScrollView>
+        
+        <VerticalStackLayout
+            Spacing="25" 
+            Padding="30,0"
+            VerticalOptions="Center">
+            
+            <Label
+                Text="Área de triángulo"
+                FontSize="35" FontFamily="Avocado Creamy"
+                TextColor="DarkBlue"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Lado A del traingulo equilatero:" FontSize="22"
+                HorizontalOptions="Start" FontFamily="gabriola" TextColor="Chocolate"/>
+            <Entry x:Name="A" Placeholder="Digite lado del triangulo equilatero" Keyboard="Numeric"/>
+
+            <Label
+                Text="Lado B del traingulo equilatero:" FontSize="22"
+                HorizontalOptions="Start" FontFamily="gabriola" TextColor="Chocolate"/>
+            <Entry x:Name="B" Placeholder="Digite lado del triangulo equilatero" Keyboard="Numeric"/>
+
+            <Label
+                Text="Lado C del traingulo equilatero:" FontSize="22"
+                HorizontalOptions="Start" FontFamily="gabriola" TextColor="Chocolate"/>
+            <Entry x:Name="C" Placeholder="Digite lado del triangulo equilatero" Keyboard="Numeric"/>
+
+            <Label
+                Text="Área del traingulo equilatero:" FontSize="22"
+                HorizontalOptions="Start" FontFamily="gabriola" TextColor="Chocolate"/>
+            <Entry x:Name="Area" Placeholder="0" IsEnabled="False"/>
+            
+            <Button
+                x:Name="btncalcular" Text="CALCULAR" BackgroundColor="AliceBlue" TextColor="DarkBlue"
+                FontFamily="Avocado Creamy" FontSize="25" BorderColor="SlateGray" BorderWidth="2.5"
+                Clicked="btncalcular_Clicked" HorizontalOptions="Center" WidthRequest="150" HeightRequest="50" />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
